@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+</HEAD>
+<BODY STYLE="FONT-FAMILY: Courier">
+<FONT COLOR="#0000C0"><B>program</B></FONT>&nbsp;LosowanieZPrawdopodobieństwem;&nbsp;<br>
+<FONT COLOR="#008000">{Użycie&nbsp;generatora&nbsp;liczb&nbsp;pseudolosowych<br>
+do&nbsp;losowania&nbsp;0&nbsp;i&nbsp;1&nbsp;z&nbsp;określonym&nbsp;prawdopodobieństwem}</FONT><br>
+<FONT COLOR="#0000C0"><B>const</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;ile_razy=50;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;prawdopodobieństwo=0.5;<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Losowanie&nbsp;0&nbsp;i&nbsp;1&nbsp;z&nbsp;P(1)='</FONT>,&nbsp;prawdopodobieństwo:10:8);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;ile_razy&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;<FONT COLOR="#A00000">random</FONT>&nbsp;&lt;&nbsp;prawdopodobieństwo&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">write</FONT>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>else</B></FONT><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">write</FONT>(0);<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>.<br>
+</FONT>
+</BODY>
+</HTML>

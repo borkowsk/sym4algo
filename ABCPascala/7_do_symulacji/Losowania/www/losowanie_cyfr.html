@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+</HEAD>
+<BODY STYLE="FONT-FAMILY: Courier">
+<FONT COLOR="#0000C0"><B>Program</B></FONT>&nbsp;Losowanie_cyfr;&nbsp;<br>
+<FONT COLOR="#008000">{Jak&nbsp;wyglada&nbsp;rozkład&nbsp;wylosowanych&nbsp;cyfr}</FONT>&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>Const</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;ile_razy=600;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;ile_cyfr=10;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>Var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;liczniki:<FONT COLOR="#0000C0"><B>array</B></FONT>[0..ile_cyfr]&nbsp;<FONT COLOR="#0000C0"><B>of</B></FONT>&nbsp;<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;losuj;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>Var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;c:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">WriteLn</FONT>(<FONT COLOR="#C000C0">'Losowanie&nbsp;'</FONT>,ile_razy,<FONT COLOR="#C000C0">'&nbsp;liczb&nbsp;z&nbsp;zakresu&nbsp;&lt;0..'</FONT>,ile_cyfr-1,<FONT COLOR="#C000C0">'&gt;'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;ile_razy&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c:=<FONT COLOR="#A00000">random</FONT>(ile_cyfr);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">Write</FONT>(c,<FONT COLOR="#C000C0">'&nbsp;'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;liczniki[c]:=liczniki[c]+1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;zeruj;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>Var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;j:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;j:=0&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;ile_cyfr-1&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;liczniki[j]:=0;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;drukuj;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>Var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;j:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'WYNIKI:'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;j:=0&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;ile_cyfr-1&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(j,<FONT COLOR="#C000C0">'&nbsp;'</FONT>,liczniki[j]);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>Begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;zeruj;&nbsp;<br>
+&nbsp;&nbsp;losuj;&nbsp;<br>
+&nbsp;&nbsp;drukuj;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>.<br>
+</FONT>
+</BODY>
+</HTML>

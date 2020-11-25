@@ -1,0 +1,341 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+</HEAD>
+<BODY STYLE="FONT-FAMILY: Courier">
+<FONT COLOR="#0000C0"><B>program</B></FONT>&nbsp;LosowaniaIStatystykiGraf;&nbsp;<br>
+<FONT COLOR="#008000">{Użycie&nbsp;generatora&nbsp;liczb&nbsp;pseudolosowych<br>
+do&nbsp;różnych&nbsp;losowań&nbsp;i&nbsp;badanie&nbsp;co&nbsp;wylosowano}</FONT>&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>const</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Niemal&nbsp;największa&nbsp;tabela&nbsp;danych&nbsp;jaką&nbsp;się&nbsp;da&nbsp;zadeklarowac&nbsp;w&nbsp;ALGO&nbsp;to&nbsp;54200&nbsp;liczb&nbsp;real}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;LastData=10000;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Histogramu&nbsp;tyle&nbsp;ile&nbsp;trzeba}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;LastHist=100;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Maksymalny&nbsp;pasek&nbsp;histogramu&nbsp;przy&nbsp;rysowaniu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;HistHeight=500;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Stałe&nbsp;związane&nbsp;z&nbsp;zakresem&nbsp;liczb&nbsp;zmiennoprzecinkowych}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;REALMAX=1.6999999999999999999999e308;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;REALMIN=-1.699999999999999999999e308;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;REALLAST=0.000000000000000000001;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;REALEPS=1.0e-323;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>type</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;histogram=<FONT COLOR="#0000C0"><B>array</B></FONT>[1..LastHist]&nbsp;<FONT COLOR="#0000C0"><B>of</B></FONT>&nbsp;<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;rawdata=<FONT COLOR="#0000C0"><B>array</B></FONT>[1..LastData]&nbsp;<FONT COLOR="#0000C0"><B>of</B></FONT>&nbsp;<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;Error(message:<FONT COLOR="#0000C0"><B>string</B></FONT>);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(message);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{halt;&nbsp;NIE&nbsp;MA&nbsp;W&nbsp;ALGO&nbsp;-&nbsp;ZATRZYMUJEMY&nbsp;PROGRAM&nbsp;WYWOŁUJĄC&nbsp;DZIELENIE&nbsp;PRZEZ&nbsp;0&nbsp;!!!}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(1/0);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;RandomIntRange(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N,ranges,rangee:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,r:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;ranges&gt;=rangee&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Error(<FONT COLOR="#C000C0">'Zakres&nbsp;losowania&nbsp;nieprawidłowy'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Ustalenie&nbsp;parametru&nbsp;funkcji&nbsp;random}</FONT>&nbsp;<br>
+&nbsp;&nbsp;r:=rangee-ranges+1;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;losowania}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tab[i]:=ranges+<FONT COLOR="#A00000">random</FONT>(r);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;RandomRange(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N:<FONT COLOR="#A00000">integer</FONT>;ranges,rangee:<FONT COLOR="#A00000">real</FONT>);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;r:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;ranges&gt;=rangee&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Error(<FONT COLOR="#C000C0">'Zakres&nbsp;losowania&nbsp;nieprawidłowy'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Ustalenie&nbsp;mnożnika}</FONT>&nbsp;<br>
+&nbsp;&nbsp;r:=rangee-ranges;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;losowania}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tab[i]:=ranges+<FONT COLOR="#A00000">random</FONT>*r;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;RandomQuotient(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;r:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;losowania}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tab[i]:=1/(<FONT COLOR="#A00000">random</FONT>+REALLAST);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;RandomSumm(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N,S:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,j:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;summ:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;losowania&nbsp;wartości}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;summ:=0;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Petla&nbsp;losowania&nbsp;składników}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;j:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;S&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;summ:=summ+<FONT COLOR="#A00000">random</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab[i]:=summ;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;RandomPseudoNorm(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N,S:<FONT COLOR="#A00000">integer</FONT>;ranges,rangee:<FONT COLOR="#A00000">real</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,j:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;summ,r:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;ranges&gt;=rangee&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Error(<FONT COLOR="#C000C0">'Zakres&nbsp;losowania&nbsp;nieprawidłowy'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Ustalenie&nbsp;mnożnika&nbsp;od&nbsp;razu&nbsp;z&nbsp;dzieleniem&nbsp;przez&nbsp;liczbę&nbsp;składników}</FONT>&nbsp;<br>
+&nbsp;&nbsp;r:=(rangee-ranges)/S;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;losowania&nbsp;wartości}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;summ:=0;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Petla&nbsp;losowania&nbsp;składników}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;j:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;S&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;summ:=summ+<FONT COLOR="#A00000">random</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab[i]:=ranges+summ*r;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;RandomProduct(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N,S:<FONT COLOR="#A00000">integer</FONT>;ranges,rangee:<FONT COLOR="#A00000">real</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,j:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;product,r:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;ranges&gt;=rangee&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Error(<FONT COLOR="#C000C0">'Zakres&nbsp;losowania&nbsp;nieprawidłowy'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Ustalenie&nbsp;mnożnika&nbsp;do&nbsp;rozciągnięcia&nbsp;zakresu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;r:=rangee-ranges;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;losowania&nbsp;wartości}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product:=1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Petla&nbsp;losowania&nbsp;składników}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;j:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;S&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product:=product*<FONT COLOR="#A00000">random</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab[i]:=ranges+product*r;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;MinMax(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N:<FONT COLOR="#A00000">integer</FONT>;<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Min,Max:<FONT COLOR="#A00000">real</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Inicjujemy&nbsp;na&nbsp;taką&nbsp;wartość,&nbsp;która&nbsp;na&nbsp;pewno&nbsp;zostanie&nbsp;zmieniona}</FONT>&nbsp;<br>
+&nbsp;&nbsp;Max:=REALMIN;&nbsp;<br>
+&nbsp;&nbsp;Min:=REALMAX;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Pętla&nbsp;poszukiwania}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>For</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastData&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;Tab[i]&lt;Min&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Min:=Tab[i];&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;Tab[i]&gt;Max&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max:=Tab[i];&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;MakeHistogramInt(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N,Min,Max:<FONT COLOR="#A00000">integer</FONT>;<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Hist:histogram);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,a:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;x:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zerowanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastHist&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hist[i]:=0;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zliczanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;N&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{a&nbsp;z&nbsp;zakresu&nbsp;MIN..MAX}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:=<FONT COLOR="#A00000">trunc</FONT>(Tab[i]);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;a&lt;=Max&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:=a-MIN+1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hist[a]:=hist[a]+1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;MakeHistogram(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N:<FONT COLOR="#A00000">integer</FONT>;Min,Max:<FONT COLOR="#A00000">real</FONT>;<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Hist:histogram;NofR:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,a:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;x:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zerowanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastHist&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hist[i]:=0;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zliczanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;N&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Do&nbsp;zakresu&nbsp;0..1}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x:=(Tab[i]-Min)/(Max-Min);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{a&nbsp;z&nbsp;zakresu&nbsp;1..NofR,&nbsp;Max&nbsp;na&nbsp;siłę&nbsp;do&nbsp;ostatniego}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>if</B></FONT>&nbsp;x&gt;=1&nbsp;<FONT COLOR="#0000C0"><B>then</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:=NofR&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>else</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:=<FONT COLOR="#A00000">trunc</FONT>(x*NofR+1);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hist[a]:=hist[a]+1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;MakeHistogramTrick(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N:<FONT COLOR="#A00000">integer</FONT>;Min,Max:<FONT COLOR="#A00000">real</FONT>;<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Hist:histogram;NofR:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,a:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;x,s:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zerowanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastHist&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hist[i]:=0;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Szacowanie&nbsp;skali}</FONT>&nbsp;<br>
+&nbsp;&nbsp;s:=Max-Min;&nbsp;<br>
+&nbsp;&nbsp;s:=s*1.000000000000001;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zliczanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;N&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Do&nbsp;zakresu&nbsp;0..0.99999&nbsp;-&nbsp;fikcyjny&nbsp;Max&nbsp;o&nbsp;0.000000000000001&nbsp;wiecej&nbsp;niż&nbsp;faktyczny}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x:=(Tab[i]-Min)/s;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{a&nbsp;z&nbsp;zakresu&nbsp;1..NofR,&nbsp;Max&nbsp;do&nbsp;ostatniego}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:=<FONT COLOR="#A00000">trunc</FONT>(x*NofR+1);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hist[a]:=hist[a]+1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;MakeHistogramRound(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Tab:rawdata;N:<FONT COLOR="#A00000">integer</FONT>;Min,Max:<FONT COLOR="#A00000">real</FONT>;<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Hist:histogram;NofR:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,a:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;x:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zerowanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;LastHist&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hist[i]:=0;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{Zliczanie&nbsp;histogramu}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;N&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{Do&nbsp;zakresu&nbsp;0..1}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x:=(Tab[i]-Min)/(Max-Min);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{"a"&nbsp;z&nbsp;zakresu&nbsp;1..NofR&nbsp;-&nbsp;Min&nbsp;i&nbsp;Max&nbsp;są&nbsp;środkami&nbsp;swoich&nbsp;przedziałów}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{&nbsp;-&nbsp;które&nbsp;przez&nbsp;to&nbsp;są&nbsp;mniejsze!}</FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:=1+<FONT COLOR="#A00000">round</FONT>(x*(NofR-1));&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hist[a]:=hist[a]+1;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;WriteHistogram(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Hist:histogram;NofR:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;NofR&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(Hist[i]);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Pierwszy&nbsp;za&nbsp;=&nbsp;'</FONT>,Hist[NofR+1]);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>procedure</B></FONT>&nbsp;DrawHistogram(<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;Hist:histogram;NofR:<FONT COLOR="#A00000">integer</FONT>);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;i,n:<FONT COLOR="#A00000">integer</FONT>;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;x,y:<FONT COLOR="#A00000">integer</FONT>;<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>for</B></FONT>&nbsp;i:=1&nbsp;<FONT COLOR="#0000C0"><B>to</B></FONT>&nbsp;NofR&nbsp;<FONT COLOR="#0000C0"><B>do</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:=Hist[i];&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#008000">{n:=trunc(n/LastData*HistHeight);}</FONT><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:=(n*HistHeight)<FONT COLOR="#0000C0"><B>div</B></FONT>&nbsp;LastData;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">Coordinates</FONT>(x,y);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">Rectangle</FONT>(0,y,n,y+15);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">MoveTo</FONT>(n,y);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#A00000">Writeln</FONT>(Hist[i]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Pierwszy&nbsp;za&nbsp;=&nbsp;'</FONT>,Hist[NofR+1]);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>var</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;TheData:rawdata;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;TheHist:histogram;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;TheMin,TheMax:<FONT COLOR="#A00000">real</FONT>;&nbsp;<br>
+<br>
+<FONT COLOR="#0000C0"><B>begin</B></FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Różne&nbsp;losowania&nbsp;i&nbsp;ich&nbsp;statystyki'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'--------------------------------'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Losowanie&nbsp;z&nbsp;zakresu&nbsp;&lt;-4,3&gt;'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomIntRange(TheData,LastData,-4,3);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:10:0,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:10:0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,255);&nbsp;<br>
+&nbsp;&nbsp;MakeHistogramInt(TheData,LastData,<FONT COLOR="#A00000">trunc</FONT>(TheMin),<FONT COLOR="#A00000">trunc</FONT>(TheMax),TheHist);&nbsp;<br>
+&nbsp;&nbsp;DrawHistogram(TheHist,<FONT COLOR="#A00000">trunc</FONT>(TheMax-TheMin+1));&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{*}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Losowanie&nbsp;z&nbsp;zakresu&nbsp;&lt;-5.5,5.5&gt;'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomRange(TheData,LastData,-5.5,5.5);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:0:10,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:0:10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,255);&nbsp;<br>
+&nbsp;&nbsp;MakeHistogram(TheData,LastData,TheMin,TheMax,TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;DrawHistogram(TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">(*TextColor(255,0,0);&nbsp;<br>
+&nbsp;&nbsp;MakeHistogramTrick(TheData,LastData,TheMin,TheMax,TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;WriteHistogram(TheHist,10);&nbsp;*)</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{*}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Losowanie&nbsp;1/random'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomQuotient(TheData,LastData);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:0:10,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:0:10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{*}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Suma&nbsp;3&nbsp;funkcji&nbsp;Random'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomSumm(TheData,LastData,3);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:0:10,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:0:10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{*}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Suma&nbsp;9&nbsp;funkcji&nbsp;Random'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomSumm(TheData,LastData,9);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:0:10,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:0:10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{*}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Rozkład&nbsp;pseudonormalny&nbsp;(9&nbsp;funkcji&nbsp;Random)&nbsp;w&nbsp;zakresie&nbsp;&lt;-5.5,5.5&gt;'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomPseudoNorm(TheData,LastData,9,-5.5,5.5);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:0:10,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:0:10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,255);&nbsp;<br>
+&nbsp;&nbsp;MakeHistogram(TheData,LastData,TheMin,TheMax,TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;DrawHistogram(TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">(*TextColor(255,0,0);&nbsp;<br>
+&nbsp;&nbsp;MakeHistogram(TheData,LastData,-5.5,5.5,TheHist,10);<br>
+&nbsp;&nbsp;WriteHistogram(TheHist,10);*)</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#008000">{*}</FONT>&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Rozkład&nbsp;ukośny&nbsp;(6&nbsp;funkcje&nbsp;Random)&nbsp;w&nbsp;zakresie&nbsp;&lt;-5.5,5.5&gt;'</FONT>);&nbsp;<br>
+&nbsp;&nbsp;RandomProduct(TheData,LastData,6,-5.5,5.5);&nbsp;<br>
+&nbsp;&nbsp;MinMax(TheData,LastData,TheMin,TheMax);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,128,0);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">writeln</FONT>(<FONT COLOR="#C000C0">'Min='</FONT>,TheMin:0:10,<FONT COLOR="#C000C0">'&nbsp;Max='</FONT>,TheMax:0:10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,255);&nbsp;<br>
+&nbsp;&nbsp;MakeHistogram(TheData,LastData,TheMin,TheMax,TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;DrawHistogram(TheHist,10);&nbsp;<br>
+&nbsp;&nbsp;<FONT COLOR="#A00000">TextColor</FONT>(0,0,0);&nbsp;<br>
+<FONT COLOR="#0000C0"><B>end</B></FONT>.<br>
+</FONT>
+</BODY>
+</HTML>
