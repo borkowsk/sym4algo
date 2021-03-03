@@ -1,0 +1,79 @@
+2020-11-25	21:32:32.175846200	./0_basic/DoWyboru.pas	
+2020-11-25	21:32:32.175846200	./0_basic/DoWyboru2.pas	
+2020-11-25	21:32:32.178846400	./0_basic/kalkulator.pas	
+2020-11-25	21:32:32.179846400	./0_basic/konkatenacja.pas	
+2020-11-25	21:32:32.176846200	./0_basic/Podprogramy.pas	
+2020-11-25	21:32:32.177846300	./0_basic/Porównania.pas	
+2020-11-25	21:32:32.179846400	./0_basic/przypisanie.pas	
+2020-11-25	21:32:32.179846400	./0_basic/stale.pas	
+2020-11-25	21:32:32.178846400	./0_basic/TestNapisow.pas	
+2020-11-25	21:32:32.179846400	./0_basic/wybieranie.pas	
+2020-11-25	21:32:32.180846500	./0_basic/zmienne.pas	
+2020-11-25	21:32:32.180846500	./1_ify_i_loopy/dodawanie_jedynki.pas	
+2020-11-25	21:32:32.182846600	./1_ify_i_loopy/dziel.pas	
+2020-11-25	21:32:32.182846600	./1_ify_i_loopy/dzielcalkowite.pas	
+2020-11-25	21:32:32.183846600	./1_ify_i_loopy/grafika_z_for.pas	
+2020-11-25	21:32:32.183846600	./1_ify_i_loopy/jeżeli.pas	
+2020-11-25	21:32:32.184846700	./1_ify_i_loopy/jeżeli2.pas	
+2020-11-25	21:32:32.184846700	./1_ify_i_loopy/okno.pas	
+2020-11-25	21:32:32.184846700	./1_ify_i_loopy/petlaFor.pas	
+2020-11-25	21:32:32.184846700	./1_ify_i_loopy/petlaRepeat.pas	
+2020-11-25	21:32:32.185846800	./1_ify_i_loopy/petlaWhile.pas	
+2020-11-25	21:32:32.185846800	./1_ify_i_loopy/repeat_vel_skok.pas	
+2020-11-25	21:32:32.185846800	./1_ify_i_loopy/skok.pas	
+2020-11-25	21:32:32.185846800	./1_ify_i_loopy/suma.pas	
+2020-11-25	21:32:32.187846900	./1_ify_i_loopy/sumuj.pas	
+2020-11-25	21:32:32.187846900	./1_ify_i_loopy/wypisywanieTab	v1.pas
+2020-11-25	21:32:32.187846900	./1_ify_i_loopy/wypisywanieTab.pas	
+2020-11-25	21:32:32.188846900	./1_ify_i_loopy/zakres.pas	
+2020-11-25	21:32:32.180846500	./1_ify_i_loopy/ZmienneNapisy.pas	
+2020-11-25	21:32:32.189847000	./2_wyższa_matematyka_xD/bitowe.pas	
+2020-11-25	21:32:32.190847100	./2_wyższa_matematyka_xD/dziwnePrzypisania.pas	
+2020-11-25	21:32:32.190847100	./2_wyższa_matematyka_xD/funkcjeMat.pas	
+2020-11-25	21:32:32.188846900	./2_wyższa_matematyka_xD/IEEE.pas	
+2020-11-25	21:32:32.189847000	./2_wyższa_matematyka_xD/IEEE_test.pas	
+2020-11-25	21:32:32.189847000	./2_wyższa_matematyka_xD/IEEv2.pas	
+2020-11-25	21:32:32.191847100	./2_wyższa_matematyka_xD/modul.pas	
+2020-11-25	21:32:32.192847200	./2_wyższa_matematyka_xD/modulo.pas	
+2020-11-25	21:32:32.191847100	./2_wyższa_matematyka_xD/modul_v0.pas	
+2020-11-25	21:32:32.191847100	./2_wyższa_matematyka_xD/modul_v1.pas	
+2020-11-25	21:32:32.192847200	./2_wyższa_matematyka_xD/rownKwProc.pas	
+2020-11-25	21:32:32.194847300	./3_tablice/ABCTablic.pas	
+2020-11-25	21:32:32.195847300	./3_tablice/param_tabl-1.pas	
+2020-11-25	21:32:32.197847500	./3_tablice/param_tabl.pas	
+2020-11-25	21:32:32.198847500	./3_tablice/param_tabl_los.pas	
+2020-11-25	21:32:32.198847500	./3_tablice/sredniaTab2	v1.pas
+2020-11-25	21:32:32.199847600	./3_tablice/sredniaTab2.pas	
+2020-11-25	21:32:32.199847600	./3_tablice/sredniaTablicy	v1.pas
+2020-11-25	21:32:32.200847600	./3_tablice/sredniaTablicy.pas	
+2020-11-25	21:32:32.200847600	./3_tablice/tablica1_liczbypalnin.20kwa.pas	
+2020-11-25	21:32:32.202847700	./4_graficzki/kolorowekola_v1.pas	
+2020-11-25	21:32:32.204847900	./4_graficzki/kolorowekola_v2.pas	
+2020-11-25	21:32:32.204847900	./4_graficzki/koloryRGB.pas	
+2020-11-25	21:32:32.201847700	./4_graficzki/PawieOczko.pas	
+2020-11-25	21:32:32.205847900	./4_graficzki/zgadnijCoTo.pas	
+2020-11-25	21:32:32.206848000	./5_zdarzenia/gierka	KOPIA.pas
+2020-11-25	21:32:32.206848000	./5_zdarzenia/gierka.pas	
+2020-11-25	21:32:32.208848100	./5_zdarzenia/zdarzenia_demo.pas	
+2020-11-25	21:32:32.209848100	./5_zdarzenia/zdarzenia_myszy	v1.pas
+2020-11-25	21:32:32.210848200	./5_zdarzenia/zdarzenia_myszy.pas	
+2020-11-25	21:32:32.210848200	./5_zdarzenia/zdarzenia_myszy_graficznie	v1.pas
+2020-11-25	21:32:32.211848300	./5_zdarzenia/zdarzenia_myszy_graficznie.pas	
+2020-11-25	21:32:32.212848300	./6_pliki/czytajplikpoznaku.pas	
+2020-11-25	21:32:32.212848300	./6_pliki/czytaliniepliku.pas	
+2020-11-25	21:32:32.214848400	./6_pliki/firstLine.pas	
+2020-11-25	21:32:32.215848500	./6_pliki/zobaczANSI.pas	
+2020-11-25	21:32:32.215848500	./6_pliki/zobaczANSI_v2.pas	
+2020-11-25	21:32:32.216848500	./6_pliki/zrobiPlik	v1.pas
+2020-11-25	21:32:32.216848500	./6_pliki/zrobiPlik.pas	
+2020-11-25	21:32:32.218848700	./7_do_symulacji/Losowania/losowaniaStat.pas	
+2020-11-25	21:32:32.218848700	./7_do_symulacji/Losowania/losowaniaStatGr.pas	
+2020-11-25	21:32:32.220848800	./7_do_symulacji/Losowania/losowaniaStatGr_v1.pas	
+2020-11-25	21:32:32.221848800	./7_do_symulacji/Losowania/losowaniaStatGr_v2.pas	
+2020-11-25	21:32:32.221848800	./7_do_symulacji/Losowania/losowanie.pas	
+2020-11-25	21:32:32.222848900	./7_do_symulacji/Losowania/losowanieExp.pas	
+2020-11-25	21:32:32.222848900	./7_do_symulacji/Losowania/losowanieProb.pas	
+2020-11-25	21:32:32.223848900	./7_do_symulacji/Losowania/losowanie_cyfr.pas	
+2020-11-25	21:32:32.224849000	./7_do_symulacji/Losowania/losowanie_galtona1.pas	
+2020-11-25	21:32:32.232849500	./7_do_symulacji/testzawijania.pas	
+2020-11-25	21:32:32.232849500	./9_skok_do_Delphi/interface_graf_ALGO.pas	

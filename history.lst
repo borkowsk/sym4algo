@@ -1,0 +1,500 @@
+   22  cd HonorModel/
+   23  git status
+   24  git add src/c/
+   25  git add src/
+   26  git status
+   27  git comit -a -m "22.04.2012 - version 0.22. First working version"
+   28  git commit -a -m "22.04.2012 - version 0.22. First working version"
+   29  git status
+   30  git commit -a -m "2012-05-20 - version 0.24. RATIONALITY introduced"
+   31  git push
+   32  git status
+   33  git commit -a -m "2012-06-06 - version 0.26. Many changes"
+   34  git status
+   35  git commit -a -m "2012-08-21 - version 0.29-0.3"
+   36  git status
+   37  git commit -a -m "2013-04-05 - version 0.30a. Project restarted."
+   38  git push
+   39  git add *
+   40  git status
+   41  git commit -a -m "2013-08-04 - version 0.35. Sources splited"
+   42  git status
+   43  git commit -a -m "2014-04-01 - version 0.37."
+   44  git status
+   45  git commit -a -m "2014-04-07 - HonorAgent A"
+   46  git status
+   47  git commit -a -m "2014-04-07 - HonorAgent B"
+   48  git status
+   49  git commit -a -m "2014-04-07 - HonorAgent C"
+   50  git status
+   51  git commit -a -m "2014-04-09 - HonorAgent D"
+   52  git commit -a -m "2014-04-09 - HonorAgent E"
+   53  git commit -a -m "2014-04-09 - HonorAgent F"
+   54  git commit -a -m "2014-04-09 - HonorAgent G"
+   55  git status
+   56  git commit -a -m "2014-04-10 - version 0.38d"
+   57  git commit -a -m "2014-04-10 - version 0.38d2"
+   58  git commit -a -m "2014-04-10 - version 0.38d3"
+   59  git commit -a -m "2014-04-10 - version 0.38d4"
+   60  git commit -a -m "2014-04-10 - version 0.38d5"
+   61  git push
+   62  git status
+   63  git commit -a -m "2014-04-14,15 - version 0.39"
+   64  git commit -a -m "2014-09-12 - version 0.39 - rand() instead getpid()"
+   65  git status
+   66  git commit -a -m "2014-10-26 - version 0.39c - before DIVIDER introduced"
+   67  git commit -a -m "2014-07-18 - version 0.402 - INFORMAL BRANCH"
+   68  git status
+   69  git commit -a -m "2014-07-18 - version 0.402 - REVERSE?"
+   70  git status
+   71  git commit -a -m "2014-10-30 - version 0.43"
+   72  git commit -a -m "2014-11-22 - version 0.43d"
+   73  git commit -a -m "2014-11-22 - version 0.43d"
+   74  git status
+   75  git push
+   76  git commit -a -m "2014-12-05 - version 0.45"
+   77  git commit -a -m "2015-08-03 - version 0.98a - FINAL?"
+   78  git push
+   79  git add *
+   80  git status
+   81  git commit -a -m "2015-08-03 - version 0.98a - FINAL. Windows comp. req. files"
+   82  git push
+   83  exit
+   84  pwd
+   85  cd /e/users/borkowsk/SCC
+   86  ll
+   87  git clone https://github.com/borkowsk/symShell2.git
+   88  git status
+   89  cd symShell2/
+   90  git status
+   91  git pull
+   92  exit
+   93  pwd
+   94  cd /e
+   95  cd "users\borkowsk\SCC\FAUMouse\MouseReg2\src\"
+   96  "
+   97  cd "users/borkowsk/SCC/FAUMouse/MouseReg2/src/"
+   98  cd rejestrator/
+   99  ls
+  100  ll
+  101  mkdir rejestrrc
+  102  git mv *.ICO rejestrrc/
+  103  git mv *.RES rejestrrc/
+  104  git mv *.rc rejestrrc/
+  105  git mv *.cur rejestrrc/
+  106  git mv *.ico rejestrrc/
+  107  git status
+  108  git commit -a -m "Rejestrator reources moved into own folder"
+  109  mkdir oldsrc
+  110  git mv DISPATCH.C oldsrc/
+  111  git mv Init.old.c oldsrc/
+  112  git mv Registra.cxx oldsrc/
+  113  git mv Rejestr.old.c  oldsrc/
+  114  git mv RESOURCE.H rejestrrc/
+  115  git mv rresrc1.h oldsrc/
+  116  git mv resrc1.h rejestrrc/
+  117  git mv VERSION.H WIN16EXT.H oldsrc/
+  118  git status
+  119  git commit -a -m "Non_needed_sources_moved_into_oldsrc_folder"
+  120  git mv STDWIN.H stdwin.h
+  121  git add oldsrc/
+  122  git status
+  123  git commit -a -m "Non_needed_sources_cleaning"
+  124  git add rejestrrc/
+  125  git add *
+  126  git status
+  127  git commit -a -m "Version_200402"
+  128  cd ../../
+  129  git add docs/
+  130  git status
+  131  git commit -a -m "Documents_of_version_200402"
+  132  git status
+  133  git add sample_experiment/
+  134  git commit -a -m "Sample_experiment_version_200402"
+  135  git add sample_data/ sample_experiment/ docs/
+  136  git commit -a -m "Additional_resources_for_version_200402"
+  137  git status
+  138  git commit -a -m "BINARIES_for_RELEASE_version_200402"
+  139  git add bin/
+  140  git commit -a -m "BINARIES_for_RELEASE_version_200402"
+  141  git push
+  142  git help tag
+  143  git tag RELEASE200402
+  144  git push
+  145  git status
+  146  git config -l
+  147  git help config
+  148  git config -e
+  149  git config -l
+  150  whereis git
+  151  git config -f
+  152  echo %GIT_CONFIG%
+  153  echo %GIT_CONFIG
+  154  echo $GIT_CONFIG
+  155  git config -a credential.helper
+  156  git config -a "credential.helper:\'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  157  git config --add "credential.helper:\'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  158  git config --add credential.helper: "\'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  159  git config --add credential.helper "\'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  160  git config --add credential.helper "\!'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  161  git config -l
+  162  git config --help
+  163  git config -h
+  164  git config --unset credential.helper
+  165  git config --unset credential.helper
+  166  git config -l
+  167  git config --unset-all credential.helper
+  168  git config -l
+  169  git config --add credential.helper "\!'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  170  git config -l
+  171  git push
+  172  git config --unset-all credential.helper
+  173  git config -l
+  174  git push
+  175  git config -h
+  176  git config --replace credential.helper "\!'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  177  git config -h
+  178  git config -l
+  179  git config --replace credential.helper "\\!'D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe'"
+  180  git config -l
+  181  git config --replace credential.helper '!"D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe"'
+  182  git config -l
+  183  git config --replace credential.helper '!\"D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\"'
+  184  git config -l
+  185  git config -h
+  186  git push
+  187  git config --global --replace credential.helper '!\"D:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\"'
+  188  git config -l
+  189  git push
+  190  git config --unset-all credential.helper
+  191  git config -l
+  192  git config -l
+  193  git config -l
+  194  git config -l
+  195  git push
+  196  git config -l
+  197  git push
+  198  git config -l
+  199  git push
+  200  git config -l
+  201  git config -l
+  202  git config -l
+  203  git push
+  204  git config -l
+  205  git push
+  206  git config -l
+  207  git push
+  208  git config -l
+  209  git push
+  210  cd ../../
+  211  ls
+  212  git clone https://github.com/borkowsk/symShell2.git
+  213  cd symShell2/
+  214  git checkout
+  215  git checkout --force
+  216  cd ..
+  217  cd FAUMouse/
+  218  git pull
+  219  git push
+  220  git tag -l
+  221  git status
+  222  git add MouseReg2/sample_data/
+  223  git status
+  224  git commit -a -m "Windows_links_to_executables_added"
+  225  pwd
+  226  git add *
+  227  git status
+  228  git commit -a -m "Release_200409"
+  229  git push
+  230  cd docs
+  231  cd MouseReg2/docs/
+  232  ls
+  233  ll
+  234  git mv ANALYSER\ USAGE\ old.doc olddocs/
+  235  ll
+  236  git mv Mouse\ Program-license-0204b.doc olddocs/
+  237  ll
+  238  git mv Manual\ 2003\ ENb.doc olddocs/
+  239  ll
+  240  cd ..
+  241  git add *
+  242  git status
+  243  git commit -a -r "Release_2005"
+  244  git commit -a -m "Release_2005"
+  245  git tag -l
+  246  git tag --help
+  247  git tag -l
+  248  git tag RELEASE2005
+  249  git push
+  250  cd 'e:\users\borkowsk\SCC\FAUMouse\MouseReg2\extensions\Changeconf2007\`
+  251  cd "/e/users/borkowsk/SCC/FAUMouse/MouseReg2/extensions/Changeconf2007/"
+  252  ll
+  253  cd Debug_Build/
+  254  ls
+  255  changeconfig.exe
+  256  ./changeconfig.exe
+  257  ./changeconfig.exe 
+  258  ./changeconfig.exe 
+  259  git status
+  260  cd ..
+  261  cd ..
+  262  git status
+  263  cd ..
+  264  git status
+  265  git add extensions/
+  266  git commit -a -m "Changeconf_extensions_started"
+  267  git status
+  268  git add src/BDS.prjs/
+  269  git commit -a -m "Borland Develope Studio Projects started 2007"
+  270  git status
+  271  git commit -a -m "Analyser.rc_2008-06-18"
+  272  git status
+  273  git commit -a -m "Analyser.rc_2008-06-18_22:55"
+  274  git status
+  275  git add  src/analyser/BDS.prj.2008/
+  276  ll
+  277  cd src/
+  278  ll
+  279  cd analyser/
+  280  ll
+  281  git mv Readme_v3.2a.txt Mail-Readme v3.2a PL.txt
+  282  git mv Readme_v3.2a.txt "Mail-Readme v3.2a PL.txt"
+  283  git status
+  284  git status
+  285  git commit -a -m "Analyser_from_BDS_2007-2008"
+  286  git ../..
+  287  git ../../
+  288  cd ..
+  289  cd ..
+  290  git add *
+  291  git status
+  292  git commit -a -m "Release_2008"
+  293  git push
+  294  git tag -l
+  295  git tag RELEASE2008
+  296  git add *
+  297  git status
+  298  git commit -a -m "RTFView_for_Windows"
+  299  git add *
+  300  git status
+  301  git commit -a -m "STARTER_introduced"
+  302  git add *
+  303  git status
+  304  git commit -a -m "MessageFont_for_test_font_selection"
+  305  git add *
+  306  git status
+  307  git commit -a -m "Starter_2013-10-22_14:03"
+  308  git commit -a -m "Starter_2013-10-22_14:10"
+  309  git commit -a -m "Starter_2013-10-22_14:25"
+  310  git status
+  311  git add *
+  312  git status
+  313  git commit -a -m "Starter_2013-10-22_14:43"
+  314  git commit -a -m "Starter_2013-10-22_14:45"
+  315  git add *
+  316  git status
+  317  git add *
+  318  git commit -a -m "Starter_2013-10-24_23:45"
+  319  git add *
+  320  git status
+  321  git commit -a -m "Starter_2013-10-24_23:48"
+  322  git commit -a -m "Starter_2013-10-24_23:54"
+  323  git commit -a -m "Starter_2013-10-24_23:54"
+  324  git commit --amend -m "Starter_2013-10-25_14:47"
+  325  git add *
+  326  git status
+  327  git commit --amend -m "Starter_2013-10-25_14:58"
+  328  git add *
+  329  git status
+  330  git add *
+  331  git status
+  332  git commit --amend -m "Starter_2013-10-25_15:39"
+  333  git add *
+  334  git status
+  335  git commit --amend -m "Starter_2013-10-25_16:26"
+  336  git add *
+  337  git status
+  338  git commit --amend -m "Starter_2013-10-29_12:04"
+  339  git add *
+  340  git status
+  341  git commit extensions/MOUSE_STARTER/Metryczka6_4.txt
+  342  git commit extensions/MOUSE_STARTER/main.pas
+  343  git commit extensions/MOUSE_STARTER/main.pas -m "2013-10-29_16:19"
+  344  git status
+  345  git commit -a -m "2013-10-29_16:22"
+  346  git status
+  347  git commit -a -m "2013-11-12_12:03"
+  348  git commit -a -m "2013-11-12_14:21"
+  349  git commit -a -m "2013-11-12_14:54"
+  350  git add *
+  351  git commit -a -m "2013-11-15_BRAKUJĄCE_METRYCZKI"
+  352  git commit -a -m "2013-11-15_17:28"
+  353  git commit -a -m "2013-11-15_17:35"
+  354  git commit -a -m "2013-11-15_17:37"
+  355  git commit -a -m "2013-11-15_17:37B"
+  356  git commit -a -m "2013-11-15_18*_FINALNE-ŻRÓDŁA"
+  357  git add *
+  358  git status
+  359  git add *
+  360  git commit -a -m "2013-11-15_18*_PLIKI_ini"
+  361  git status
+  362  git add *
+  363  git status
+  364  git commit -a -m "2013-11-15_18_starter_ready_to_use"
+  365  git add *
+  366  git status
+  367  git commit -a -m "2011-13_better_docs"
+  368  git add *
+  369  git status
+  370  git commit -a -m "2013_lnk&ini_modified"
+  371  git push
+  372  git status
+  373  git add  extensions/recorder_v02/
+  374  git commit -a -m "sound_recorder_w_Processingu._Wersja2_bo_pierwsza_z_2013_przeadła"
+  375  git push
+  376  exit
+  377  gcc
+  378  cmake
+  379  g++
+  380  exit
+  381  ll
+  382  cd 'c:\ZASOBY\SCC\sym4algo\ABCPascala\'
+  383  find . -name "*.pas"
+  384  find . -name "*.pas" -date
+  385  find . -name "*.pas" -exec ls {} \;
+  386  find . -name "*.pas" -exec ls -l -G {} \;
+  387  find . -name "*.pas" -exec ls -l -G --full-time {} \;
+  388  find . -name "*.pas" -exec ls -l -G --full-time {} \; > lista_git.txt
+  389  cd ../Studenckie/
+  390  ll
+  391  cd ABC/
+  392  find . -name "*.pas" -exec ls -l -G --full-time {} \; > lista_git.txt
+  393  cd ..
+  394  find . -name "*.pas" -exec ls -l -G --full-time {} \; > lista_git.txt
+  395  find . -name "*.alg" -exec ls -l -G --full-time {} \; >> lista_git.txt
+  396  ll
+  397  chmod +x lista_git.txt 
+  398  ll
+  399  ./lista_git.txt 
+  400  git status
+  401  git push
+  402  git status
+  403  ./lista_git.txt 
+  404  git status
+  405  rm  Modele_domowe/ekosystem.xls
+  406  git status
+  407  cd ../ABCPascala/
+  408  ll
+  409  git add 0_basic/WitajSwiecie.alg
+  410  git add /4_graficzki/xrazyy.alg
+  411  git add 4_graficzki/xrazyy.alg
+  412  git commit -a -m "Powitanie_świata_i_powitanie_funkcji_2D"
+  413  git status
+  414  ll "../Studenckie/Dalsze_programowanie/Grafiki_domowe/grafika_Piotr Sr1530B-Piotr Ratajski Gr. Piotr, Aleksandra,\305\201ukasz, Piotr,Andrzej.alg"
+  415  cd ..
+  416  ll
+  417  cd Studenckie/
+  418  ll
+  419  ll "../Studenckie/Dalsze_programowanie/Grafiki_domowe/grafika_Piotr Sr1530B-Piotr Ratajski Gr. Piotr, Aleksandra,\305\201ukasz, Piotr,Andrzej.alg"
+  420  ll "Dalsze_programowanie/Grafiki_domowe/grafika_Piotr Sr1530B-Piotr Ratajski Gr. Piotr, Aleksandra,\305\201ukasz, Piotr,Andrzej.alg"
+  421  git status
+  422  git status
+  423  git add  Gry/kolko_i_krzyzyk_JoannaObszynska_NIEDZIALA.alg
+  424  git commit -a -m "2007-06b"
+  425  git status
+  426  ll Dalsze_programowanie/Latwe_obliczenia_domowe/delta_CZYJ.alg
+  427  git add Dalsze_programowanie/Latwe_obliczenia_domowe/delta_CZYJ.alg
+  428  git commit -a -m "2007-03b"
+  429  git add Dalsze_programowanie/Grafiki_domowe/grafika_Piotr*
+  430  git commit -a -m "2007-04b"
+  431  git status
+  432  git push
+  433  cd Modele_domowe/
+  434  ll
+  435  mkdir Zarazy
+  436  git mv epid* Zarazy/
+  437  git status
+  438  ll
+  439  git mv Epid* Zarazy/
+  440  ll
+  441  head adam_fidusiewicz_siec_hierarchiczna.alg 
+  442  gt mv adam_fidusiewicz_siec_hierarchiczna.alg Zarazy/ 
+  443  git mv adam_fidusiewicz_siec_hierarchiczna.alg Zarazy/ 
+  444  ll
+  445  git mv demo_LTESKA1_and_co_Sr1530B.alg ../Dalsze_programowanie/Grafiki_domowe/
+  446  git mv czlowiekGuma-80%-Jahym_grupa.alg ../Dalsze_programowanie/Grafiki_domowe/
+  447  git mv grafika_STORM-100%.alg ../Dalsze_programowanie/Grafiki_domowe/
+  448  git mv Symulacja\ prostego\ ekosystemu_SPIKowcy.alg Ekosystemy/
+  449  git mv pijany_zarlacz_Jabłonski-zadanie\ domowe4.alg Ekosystemy/
+  450  git mv Wielkanoc_nowa_KarolinaLisiecka.alg ../Dalsze_programowanie/Grafiki_domowe/
+  451  ll
+  452  git mv szyfrator_marcin_janicki.alg ../Dalsze_programowanie/Inne_domowe/
+  453  ll
+  454  git status
+  455  ll ../ABC/lekcja2row*
+  456  git add ../ABC/lekcja2row*
+  457  git commit -a -m "2007-03c"
+  458  git status
+  459  ll Particle3Dist._Elczewski.alg
+  460  git add Particle3Dist._Elczewski.alg 
+  461  git commit -a -m "2010-11b"
+  462  git status
+  463  git push
+  464  cd ../../Zajecia/
+  465  ll
+  466  history | grep find
+  467  find . -name "*.pas" -exec ls -l -G --full-time {} \; > lista_git.txt
+  468  find . -name "*.alg" -exec ls -l -G --full-time {} \; >> lista_git.txt
+  469  ll
+  470  chmod +x lista_git.txt 
+  471  ll
+  472  bash lista_git.txt 
+  473  git status
+  474  bash lista_git.txt 
+  475  git status
+  476  bash lista_git_poprawka.txt
+  477  bash lista_git_poprawka.txt
+  478  git status
+  479  git add CA1D/1D_pseudolife_graf_rand.png
+  480  git status
+  481  git commit -a -m "Przykład_screenu"
+  482  git push
+  483  ll
+  484  history | firnd
+  485  history | find
+  486  history | grep find
+  487  find . -name "*.alg" -or -name "*.pas"
+  488  cd ..
+  489  find . -name "*.alg" -or -name "*.pas"
+  490  find . -name "*.alg" -or -name "*.pas" | grep pas
+  491  find . -name "*.alg" -or -name "*.pas" > rename_list.sh
+  492  ll
+  493  ll
+  494  bash rename_list.sh
+  495  git status
+  496  git commit -a -m "Zmiana nazw na bardziej spolegliwe"
+  497  git push
+  498  exit
+  499  ll
+  500  ll *.sh
+  501  history
+  502  history > history.lst
+  503  git status
+  504  history | grep cd
+  505  cd /e/users/borkowsk/SCC
+  506  ll
+  507  git status
+  508  cd symShell2/
+  509  git status
+  510  ll
+  511  cd ..
+  512  ll
+  513  cd /c/ZASOBY/
+  514  LL
+  515  ll
+  516  cd SCC/
+  517  ll
+  518  cd sym4algo/
+  519  ll
+  520  git status
+  521  history > history.lst

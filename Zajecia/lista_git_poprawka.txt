@@ -1,0 +1,134 @@
+git	add	./Obliczenia/ConcatDemo.alg		#	2002-10-26	13:27:46.000000000
+git	add	./Obliczenia/LengthDemo.alg		#	2002-10-26	13:32:36.000000000
+git commit -a -m "Bardzo_stare"
+
+
+git	add	./Czasteczkowe/particles.alg		#	2005-04-11	11:03:14.000000000
+git	add	./Czasteczkowe/particles1.alg		#	2005-04-11	11:06:14.000000000
+git	add	./Czasteczkowe/particles2.alg		#	2005-04-11	12:10:10.000000000
+git	add	./Czasteczkowe/particles3.alg		#	2005-04-11	12:26:34.000000000
+git	add	./Czasteczkowe/particles5.alg		#	2005-04-11	12:45:02.000000000
+git commit -a -m "Particles_2005-04-11b"
+
+
+
+git	add	./Obliczenia/IEEE.alg		#	2005-04-21	20:14:56.000000000
+git	add	./Czasteczkowe/particles5c.alg		#	2005-05-04	21:34:38.000000000
+git commit -a -m "Particles_2005-04_cd"
+
+git	add	./Bladzenie/losowe_bladzenie1.1.alg		#	2005-10-23	23:10:22.000000000
+git	add	./Bladzenie/losowe_bladzenie2.alg		#	2005-10-23	23:25:02.000000000
+git	add	./Bladzenie/losowe_bladzenie2.1.alg		#	2005-10-23	23:26:56.000000000
+git commit -a -m "bladzenie_2005-10-23b"
+
+
+
+git	add	./Funkcje2D/sinus.alg		#	2005-10-29	01:42:02.000000000
+git	add	./Obliczenia/tabliczka.alg		#	2005-10-29	01:44:32.000000000
+git	add	./Obliczenia/Ciag.alg		#	2005-10-29	10:18:18.000000000
+git	add	./Obliczenia/kwadrat.alg		#	2005-10-29	18:42:18.000000000
+git commit -a -m "Obliczenia_2005-10-29b"
+
+
+git	add	./CA1D/1D_Wolfram_binary_stat.alg		#	2005-11-02	22:22:12.000000000
+git	add	"./CA1D/1D_pseudo_life_kod programu zaj.6.alg"		#	2005-11-18	21:25:38.000000000
+git commit -a -m "CA-2005-11-18b"
+
+
+git	add	"./Bladzenie/ruch browna_kod.alg"		#	2005-11-18	22:06:30.000000000
+git commit -a -m "Brown_2005-11-18"
+
+git	add	./Attitude/Attitude_strenght_fix_neigh.alg		#	2007-01-18	12:14:56.000000000
+git	add	./Agentowe/Getto8.alg		#	2007-01-18	17:08:58.000000000
+git commit -a -m "Symulacje_2007-01b"
+
+
+
+git	add	./Obliczenia/program_równanie_kwadratowe.alg		#	2007-03-17	00:18:30.000000000
+git	add	./Obliczenia/rownanie_kwadratowe1.alg		#	2007-03-18	16:47:46.000000000
+git	add	./ZgadnijCoTo.alg		#	2007-03-21	10:35:52.000000000
+git commit -a -m "podstawy_2007-03b"
+
+
+
+
+git	add	./Obliczenia/suma.alg		#	2007-03-25	18:50:34.000000000
+git	add	./Obliczenia/rownanie_kwadratowe0.alg		#	2007-03-25	19:46:00.000000000
+git	add	./Obliczenia/rownanie_kwadratowe2.alg		#	2007-03-25	21:09:50.000000000
+git	add	./Bladzenie/losowe_bladzenie1.alg		#	2007-03-25	22:25:22.000000000
+git commit -a -m "Obliczenia_i_bladzenia_2007-03-b"
+
+git	add	"./Obliczenia/sumowanie.alg"		#	2007-03-30	03:57:48.000000000
+git commit -a -m "obliczenia_2007-03cd"
+
+git	add	./Sieciowe/EpidemicNet.alg		#	2007-05-09	10:53:20.000000000
+git	add	./Attitude/Attitude_move.alg		#	2007-05-16	13:52:44.000000000
+git	add	./Attitude/Attitude_strenght.alg		#	2007-05-22	21:44:50.000000000
+git commit -a -m "Symulacje_2007-05b"
+
+
+
+git	add	"./Logistyczne/Logistyczne2.1.alg"		#	2010-10-06	22:56:54.000000000
+git	add	"./Logistyczne/Logistyczne1.1.alg"		#	2010-10-07	00:31:32.000000000
+git	add	"./Logistyczne/Logistyczne1.2.alg"		#	2010-10-07	00:31:36.000000000
+git commit -a -m "Jedno_logistyczne_2010-10-07b"
+
+
+git	add	"./Logistyczne/DwaLogistyczne2.alg"		#	2010-10-14	17:19:40.000000000
+git	add	"./Logistyczne/DwaLogistyczne1.0.alg"		#	2010-10-14	17:22:12.000000000
+git	add	"./Logistyczne/DwaLogistyczne1.5.alg"		#	2010-10-14	17:31:24.000000000
+git	add	"./Logistyczne/DwaLogistyczne1.7.alg"		#	2010-10-14	17:33:28.000000000
+git	add	"./Logistyczne/DwaLogistyczne3.alg"		#	2010-10-14	17:55:28.000000000
+git	add	"./Logistyczne/DwaLogistyczne3zplikiem.alg"		#	2010-10-14	17:57:28.000000000
+git commit -a -m "Dwa_logistyczne_2010-10-14b"
+
+git	add	./Logistyczne/DwaLogistyczneGraf.alg		#	2010-10-25	22:33:48.000000000
+git	add	"./Funkcje2D/sinrazysin.alg"		#	2010-10-26	22:55:40.000000000
+git	add	"./Logistyczne/Jetka.alg"		#	2010-10-26	23:15:56.000000000
+git	add	"./Logistyczne/JetkaRndX0.alg"		#	2010-10-26	23:23:40.000000000
+git	add	./Logistyczne/JetkaSrednia.alg		#	2010-10-27	16:29:46.000000000
+git	add	./Logistyczne/JetkaLosowa.alg		#	2010-10-27	16:30:10.000000000
+git commit -a -m "Graficznie_2010-25..27b"
+
+
+git	add	./CA1D/1D_Wolfram_binary_stat_v1.9.alg		#	2010-11-01	10:46:14.000000000
+git	add	./CA1D/1D_Wolfram_binary_stat_v2.alg		#	2010-11-01	10:46:18.000000000
+git	add	./Logistyczne/JetkaLapunow.alg		#	2010-11-02	14:41:10.000000000
+git	add	./Logistyczne/JetkaLapunowUZUPELNIJ.alg		#	2010-11-02	23:04:16.000000000
+git commit -a -m "CA i chaos 2010-11-01..02b"
+
+
+git	add	./Czasteczkowe/particles4.alg		#	2010-11-08	22:16:14.000000000
+git	add	./Czasteczkowe/flock1.alg		#	2010-11-09	22:33:30.000000000
+git	add	./Czasteczkowe/flock2.alg		#	2010-11-09	22:35:14.000000000
+git	add	./Czasteczkowe/flock5agents.alg		#	2010-11-09	22:42:12.000000000
+git commit -a -m "Czasteczkowe+2010-11-08..09b"
+
+git	add	"./Losowania/przyklad2 generator_v1.0.alg"		#	2010-11-10	11:58:38.000000000
+git	add	"./Losowania/przyklad1 losowanie_v1.0.alg"		#	2010-11-10	11:59:44.000000000
+git	add	"./Losowania/przyklad3 generator_kolor_v2.0.alg"		#	2010-11-10	12:01:12.000000000
+git	add	"./Losowania/przyklad4_losowanie_cyfr.alg"		#	2010-11-10	12:01:46.000000000
+git	add	./Czasteczkowe/particles3b.alg		#	2010-11-10	12:15:18.000000000
+git	add	./Czasteczkowe/flock3.alg		#	2010-11-10	12:19:00.000000000
+git	add	./Czasteczkowe/flock4.alg		#	2010-11-10	12:24:40.000000000
+git	add	./Czasteczkowe/flock6agents.alg		#	2010-11-10	12:25:42.000000000
+git commit -a -m "Losowania_i_stada_2010-11-10b"
+
+
+git	add	./CA1D/1D_pseudolife_tekstowo.alg		#	2010-11-16	12:16:44.000000000
+git	add	./CA1D/1D_pseudolife_graf_rand.alg		#	2010-11-16	12:20:38.000000000
+git commit -a -m "CA_1D_2010-11-16"
+
+
+git	add	./Attitude/Attitude_flat.alg		#	2010-12-15	10:23:46.000000000
+git commit -a -m "ATTITUDE_2010-12-15b"
+
+git	add	./Losowania/losowaniaStatGr.alg		#	2011-01-16	19:05:44.000000000
+git	add	./Losowania/losowaniaStatGrV2.alg		#	2011-01-16	19:07:32.000000000
+git	add	./Losowania/losowaniaStat.alg		#	2011-01-16	19:08:44.000000000
+git commit -a -m "Losowania_z_rozkladów_2011-01-16b"
+
+
+git	add	./CA1D/1D_zielone-czerwone.alg		#	2011-01-19	22:35:52.000000000
+git	add	./Attitude/Attitude_strenght_stat.alg		#	2011-01-23	20:38:12.000000000
+git commit -a -m "CA i wplyw 2011-01b"

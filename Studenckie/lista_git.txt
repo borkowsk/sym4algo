@@ -1,0 +1,334 @@
+#!/bin/bash
+#git add "./Dalsze_programowanie/Grafiki_domowe/demo_pryzmat 90% JBinczyk.alg"			# 2005-05-04 00:32:40.000000000 
+#git add "./Dalsze_programowanie/Grafiki_domowe/grafika_kalafior-66%_Pyzalski.alg"			# 2005-05-04 00:29:00.000000000 
+#git add "./Dalsze_programowanie/Grafiki_domowe/kredki_yemilb-66%-Maja_Gosia_Szymon_Michal.alg"			# 2005-05-04 00:08:56.000000000 
+#git add "./Dalsze_programowanie/Grafiki_domowe/wahadło_Binczyk.alg"			# 2005-05-04 00:35:52.000000000 
+#git add "./Modele_domowe/czlowiekGuma-80%-Jahym_grupa.alg"			# 2005-05-04 00:02:38.000000000 
+#git commit -a -m "2005-05"
+
+
+git add "./Modele_domowe/Termity/ZuzaMrowki.alg"			# 2005-06-05 18:11:14.000000000 
+git add "./Modele_domowe/Termity/ZuzaPoprawiona.alg"			# 2005-06-05 18:11:26.000000000 
+git add "./Modele_domowe/Termity/ZuzyMrowki.alg"			# 2005-06-05 18:00:36.000000000 
+git commit -a -m "2005-06"
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/tabliczka_poprawione_Mariusz_Karbowski.alg"			# 2005-10-29 19:58:52.000000000 
+git commit -a -m "2005-10"
+
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_GosiaPiotrekMichal.alg"			# 2005-11-06 23:40:42.000000000 
+git add "./Modele_domowe/Practicles_KacperSzymanski.alg"			# 2005-11-08 20:55:34.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/Animacje1_Choinski-Olszewska-Jaszczuk-Prokop.alg"			# 2005-11-13 00:39:30.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/demo_PKitta.alg"			# 2005-11-13 01:24:40.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_AgnieszkaKaszuba-AgataRaczewska-KacperLatecki-KacperSzymanski-MarcinDusza.alg"			# 2005-11-13 00:31:58.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_MagdaFormanowicz-JustynaOrłowska-WiolettaWierzbicka.alg"			# 2005-11-13 00:28:40.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_w_algo_Trawiinski.alg"			# 2005-11-13 00:54:28.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/wizja_grupa_janek_mariusz_karolina_dorota.alg"			# 2005-11-13 00:52:22.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/wizja_program_grupy_JanekT_MariuszK_KarolinaJ_DorotaW.alg"			# 2005-11-13 00:53:30.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/wizja_Wardecka.alg"			# 2005-11-13 00:40:16.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sinus_Michal_Posiada_a.alg"			# 2005-11-13 00:11:56.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/tabliczka_iza_olszewska.alg"			# 2005-11-13 00:07:28.000000000 
+git add "./ABC/losowanie_v1.0_CZYJ.alg"			# 2005-11-17 14:59:00.000000000 
+git add "./ABC/szum generator kolor skuer v2.0.alg"			# 2005-11-17 15:07:50.000000000 
+git add "./Modele_domowe/bladzenie_zajecia5_wyciek_v4.0.alg"			# 2005-11-18 04:26:48.000000000 
+git add "./Modele_domowe/Particles_CZYJ.alg"			# 2005-11-18 23:39:36.000000000 
+git add "./Modele_domowe/particles_zaj5_plyn_v2.0_CZYJ.alg"			# 2005-11-18 04:16:22.000000000 
+git add "./ABC/ciag_zadanie_4.alg"			# 2005-11-20 14:07:18.000000000 
+git add "./ABC/kwadrat_zadanie_2.alg"			# 2005-11-20 14:07:18.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_w_algo_Agata_RB.alg"			# 2005-11-20 22:26:04.000000000 
+git add "./Modele_domowe/pijany_zarlacz_Jabłonski-zadanie domowe4.alg"			# 2005-11-20 21:51:08.000000000 
+git commit -a -m "2005-11"
+
+
+
+git add "./Modele_domowe/monte_carlo_MagdaForm_FRAGMENT.alg"			# 2005-12-07 23:27:44.000000000 
+git add "./Modele_domowe/epidemic_MagdaFormanowiczSiatkaReg_org.alg"			# 2005-12-18 00:13:50.000000000 
+git commit -a -m "2005-12"
+
+
+git add "./Modele_domowe/Rewolucje_dwie_projekt.alg"			# 2006-01-23 17:24:02.000000000 
+git commit -a -m "2006-01"
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/aMaciagowska_obliczenie1.alg"			# 2006-03-15 00:08:14.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/aMaciagowska_obliczenie2.alg"			# 2006-03-15 00:11:08.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/aMaciagowska_obliczenie3.alg"			# 2006-03-15 00:14:46.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/obliczenia_Myslinska_program2.alg"			# 2006-03-15 23:14:48.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Nowy_Dokument_tekstowy_JanickiA.alg"			# 2006-03-16 18:41:20.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/obliczenia_Marta_Burnant.alg"			# 2006-03-16 19:17:38.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Obliczenia_Ostaszewska-program1.alg"			# 2006-03-16 20:00:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Zmienne_bialobrzeska_1.alg"			# 2006-03-16 19:09:20.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Karpinska.alg"			# 2006-03-16 19:09:16.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Kolczyński program Przemysław.alg"			# 2006-03-16 19:11:04.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Rafal_Przybys.alg"			# 2006-03-16 19:43:28.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Zmudzin.alg"			# 2006-03-16 19:59:26.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/obliczenia_janicki zadanie.alg"			# 2006-03-26 23:42:34.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Zmudzin_programpoprawiony.alg"			# 2006-03-26 23:35:04.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_zadanie3_CZYJ.alg"			# 2006-03-31 18:50:52.000000000 
+git commit -a -m "2006-03"
+
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumujący_trzecie_samodzielne_zad.alg"			# 2006-04-02 21:49:38.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Adrian Gnatek.alg"			# 2006-04-04 15:58:30.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/DEMKO_Kola_Ostaszewska.alg"			# 2006-04-16 22:44:36.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/trojkat_Bialobrzeska.alg"			# 2006-04-16 21:09:06.000000000 
+git add "./ABC/wczytywanie_Project2.alg"			# 2006-04-28 21:08:28.000000000 
+git commit -a -m "2006-04"
+
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyka_BurnantPoprawione.alg"			# 2006-05-07 15:02:50.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/pliki_pytanie_ostaszewska.alg"			# 2006-05-16 14:38:46.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/obliczenia_SOSNOWSKI_pierwsze_zadanie.alg"			# 2006-05-21 12:50:12.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/butterfly-100%-grupa_Rutkowska.alg"			# 2006-06-02 18:58:44.000000000 
+git add "./Gry/Berek_Myslinska.alg"			# 2006-06-02 19:48:20.000000000 
+git add "./Gry/Berek_RafalPrzybys.alg"			# 2006-06-02 19:53:16.000000000 
+git add "./Gry/Berek_SzymonKarchut.alg"			# 2006-06-02 19:51:20.000000000 
+git add "./Gry/BEREK_Uciekinier_AdrianGnatek.alg"			# 2006-06-02 19:57:46.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/MISTRZ_KLAWIATURY_ZALICZENOWY_Szymon_karchut.alg"			# 2006-06-14 19:49:22.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Mistrz_Klawiatury_zal_marta_burnant.alg"			# 2006-06-14 19:50:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_zaliczenie_RafalPrzybys.alg"			# 2006-06-14 19:51:52.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Obliczenia_statystyczne_Ostaszewska.alg"			# 2006-06-14 19:50:52.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/animacja_karolina_myslinska.alg"			# 2006-06-19 13:31:38.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/AnkietaZaliczenieAdrianGnatek.alg"			# 2006-06-19 09:27:38.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Mistrz_klawiatury_AtBash.alg"			# 2006-06-19 14:03:06.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Mistrz_klawiatury_CezareM.alg"			# 2006-06-19 14:10:16.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Mistrz_klawiatury_drabinkowo.alg"			# 2006-06-19 14:04:56.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Mistrz_klawiatury_Marta_Burnant.alg"			# 2006-06-19 13:44:08.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Mistrz_klawiatury_Marta_Burnant_1.alg"			# 2006-06-19 09:28:06.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Obliczenia_statystyczne_Ostaszewska_urozmaicony.alg"			# 2006-06-19 09:28:48.000000000 
+git add "./Gry/Berek1_Burnant.alg"			# 2006-06-19 09:12:00.000000000 
+git add "./Gry/kulki1_kitta.alg"			# 2006-06-19 08:55:24.000000000 
+git add "./Modele_domowe/szyfrator_marcin_janicki.alg"			# 2006-06-19 13:47:12.000000000 
+git add "./Gry/kulki2_Kitta.alg"			# 2006-06-21 12:35:50.000000000 
+git commit -a -m "2006-06"
+
+git add "./Modele_domowe/dyl_wieznia_CZYJ.alg"			# 2006-07-01 14:34:32.000000000 
+git commit -a -m "2006-07"
+
+
+git add "./Modele_domowe/epidemic_MagdaFormanowiczSiatkaReg.alg"			# 2006-12-04 22:37:20.000000000 
+git add "./Modele_domowe/Rewolucje_Karbowski.alg"			# 2006-12-12 10:11:42.000000000 
+git commit -a -m "2006-12"
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/obliczenia_Zapedowski_ProgramCaly.alg"			# 2007-02-27 00:23:06.000000000 
+git commit -a -m "2007-02"
+
+git add "./ABC/Witaj_Mlynarczyk_homework1.alg"			# 2007-03-05 23:16:10.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Karolinka_program2.alg"			# 2007-03-05 23:17:28.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Program 1.alg"			# 2007-03-08 22:39:02.000000000 
+git add "./Modele_domowe/wplyw_prog_zal_CZYJ.alg"			# 2007-03-10 21:28:42.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Zmienne_Wisniewska1.alg"			# 2007-03-12 06:32:42.000000000 
+git add "./Modele_domowe/Termity/mrowek_L_kilka naraz-Jaga.alg"			# 2007-03-12 12:08:14.000000000 
+git add "./Modele_domowe/Termity/mrowka_Gosia_Poltorak.alg"			# 2007-03-12 23:04:34.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Max_Polak.alg"			# 2007-03-13 20:10:20.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Mazurkiewicz.alg"			# 2007-03-13 14:31:02.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_pr dom2.alg"			# 2007-03-13 16:08:18.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_wisniewska1-poprWB.alg"			# 2007-03-13 16:16:36.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_MarcinC.alg"			# 2007-03-14 00:41:40.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/Animacje2_choinski-olszewska at all.alg"			# 2007-03-17 16:56:00.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_Arek.alg"			# 2007-03-17 15:46:10.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Obliczenia2_Maksym_Tyszko.alg"			# 2007-03-17 17:43:08.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Rudnik_Magda_praca_domowa2.alg"			# 2007-03-17 15:48:36.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyka_Ciecierska program1.alg"			# 2007-03-17 15:49:56.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_Kijak-zadanie_2.alg"			# 2007-03-17 15:15:28.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_Zalewska_pr_dom_2.alg"			# 2007-03-17 14:47:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/suma_adamkrolikowski_zadanie2.alg"			# 2007-03-17 15:08:34.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/suma_Pasikowska program.alg"			# 2007-03-17 15:45:32.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/suma_Popek.alg"			# 2007-03-17 15:47:36.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Marcin_Golaszewsk.alg"			# 2007-03-17 15:18:28.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Wierzbicka praca_domowa_2 org.alg"			# 2007-03-17 15:52:04.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Wierzbicka praca_domowa_2.alg"			# 2007-03-17 15:27:02.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Wrzosek praca_domowa_ania.txt.alg"			# 2007-03-17 15:52:40.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_Blanka_Naborowska.alg"			# 2007-03-17 14:01:00.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_janrybczynski.alg"			# 2007-03-17 15:47:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_Juniewicz zadanie_2.alg"			# 2007-03-17 15:48:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_Marta_Melcer_2.alg"			# 2007-03-17 13:52:32.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_Misko Lukasz Pr2.alg"			# 2007-03-17 15:47:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_AnMisko_Pr2.alg"			# 2007-03-17 12:49:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Bartoszewska_Domowa1.alg"			# 2007-03-17 15:48:48.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Fidusiewicz pracadomowa.alg"			# 2007-03-17 15:26:18.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Fidusiewicz_pracaorg.alg"			# 2007-03-17 15:51:08.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Fidyk Malina Praca_domowa.alg"			# 2007-03-17 15:48:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_homework2_CZYJ.alg"			# 2007-03-17 15:48:00.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Kuczynski praca_domowa.alg"			# 2007-03-17 15:50:28.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Lagowski_home_work1j.alg"			# 2007-03-17 15:50:40.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Latawiec_domowa2.alg"			# 2007-03-17 15:46:20.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_LukaszTeska.alg"			# 2007-03-17 15:46:46.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_praca_domowa_ania.alg"			# 2007-03-17 15:37:00.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Szewczuk_homework2.alg"			# 2007-03-17 14:06:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Wardecka zadanie_domowe1.alg"			# 2007-03-17 15:46:30.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_Wierzbicki praca.alg"			# 2007-03-17 15:45:44.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Michał Jaworski 16822.alg"			# 2007-03-17 18:00:56.000000000 
+git add "./Modele_domowe/grafika_STORM-100%.alg"			# 2007-03-17 16:38:14.000000000 
+git add "./Modele_domowe/Wielkanoc_nowa_KarolinaLisiecka.alg"			# 2007-03-17 17:20:06.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_rownanie_CZYJ.alg"			# 2007-03-22 21:40:14.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_Ania_Gawrys_zadanie3_Delta.alg"			# 2007-03-24 22:16:08.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_ProgramDelta_Zapedowski.alg"			# 2007-03-24 21:25:20.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_MariuszZiolkowskirownaniekwadratowe.alg"			# 2007-03-25 18:14:26.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_Row_kwa_poprawione_MZiolko_.alg"			# 2007-03-25 22:51:16.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/suma_Gawrys.alg"			# 2007-03-25 23:38:44.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Zapedowski.alg"			# 2007-03-25 23:49:32.000000000 
+git add "./ABC/pętla.alg"			# 2007-03-29 17:52:00.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_Obszynska_task3.alg"			# 2007-03-29 20:12:38.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/obliczdelte_Wisniewska.alg"			# 2007-03-29 20:13:04.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/suma_Michal_Jaworski.alg"			# 2007-03-29 20:12:54.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/SUMOWANIE_Michal_Jaworski.alg"			# 2007-03-30 00:44:52.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Obszynska-task4.alg"			# 2007-03-30 00:44:34.000000000 
+git commit -a -m "2007-03"
+
+
+
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_Rojek.alg"			# 2007-04-02 20:24:32.000000000 
+git add "./Modele_domowe/Termity/mrowkiL_Magdy.alg"			# 2007-04-02 19:21:24.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_Piotr Sr1530B-Piotr Ratajski Gr. Piotr,"			# 2007-04-03 22:46:04.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_Piotr Sr1530B-Ratajski - Wybuch2 Aleksandra,"			# 2007-04-03 23:22:16.000000000 Andrzej, Piotr.alg
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_ola3.alg"			# 2007-04-03 14:14:30.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumuj_ola4.alg"			# 2007-04-03 14:39:26.000000000 
+git add "./Modele_domowe/Ekosystemy/lotka_volterra_automat_LidkaK.alg"			# 2007-04-11 23:46:16.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/chmurka_jakas_grupa_MRudnik.alg"			# 2007-04-12 12:50:54.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/demo_grupa_Nowocin_17.15A.alg"			# 2007-04-12 12:54:14.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/demo_Melcer_cz1200A.alg"			# 2007-04-12 12:45:28.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/DOG_Gorakowski_cz1200B.alg"			# 2007-04-12 12:46:26.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/graficzne_Zalewska_Cz1345C.alg"			# 2007-04-12 12:50:28.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_Czesio_Fidyk_Cz1345A.alg"			# 2007-04-12 12:47:04.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_Pasikowska_grupa_Sr1530A.alg"			# 2007-04-12 12:52:02.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/Trwam_Markowski_Cz1345B.alg"			# 2007-04-12 12:48:26.000000000 
+git add "./Modele_domowe/demo_LTESKA1_and_co_Sr1530B.alg"			# 2007-04-12 12:53:48.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_Wardecka_grupowaprdm_Sr1715B.alg"			# 2007-04-15 16:40:42.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki2_Gawrys.alg"			# 2007-04-19 11:15:10.000000000 
+git commit -a -m "2007-04"
+
+
+
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Marta_Rojek.alg"			# 2007-05-08 17:08:42.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumowanie_Obszynska-task4-pop.alg"			# 2007-05-08 17:01:54.000000000 
+git add "./Modele_domowe/czastki_w_kole_Teska_grupa.alg"			# 2007-05-11 16:08:48.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Statystyki_1_kowalczyk.alg"			# 2007-05-13 23:51:54.000000000 
+git add "./Modele_domowe/Epidemia_Golaszewski.alg"			# 2007-05-13 23:09:38.000000000 
+git add "./Modele_domowe/epidemic_Kowalczyk.alg"			# 2007-05-13 23:05:58.000000000 
+git add "./Modele_domowe/epidemic_Malina.alg"			# 2007-05-13 23:00:08.000000000 
+git add "./Modele_domowe/Epidemic_Salski.alg"			# 2007-05-13 23:02:22.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyka_JezierskaOlga.alg"			# 2007-05-14 23:10:42.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyka_RojekMarta.alg"			# 2007-05-14 23:00:16.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_GrodeckaAgnieszka.alg"			# 2007-05-14 23:17:46.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Statystyki_mlynarczykMalgosia.alg"			# 2007-05-14 23:05:34.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_ObszynskaJoanna.alg"			# 2007-05-14 22:52:34.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_trudne_GawrysAnia.alg"			# 2007-05-14 23:27:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_ZolkowskaKarolina.alg"			# 2007-05-14 23:16:48.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/suma_ania.alg"			# 2007-05-14 22:47:22.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Marta_Rojek_zad2.alg"			# 2007-05-14 23:54:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_Obszynska_task2.alg"			# 2007-05-14 23:50:44.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/zmienne_ola2.alg"			# 2007-05-14 23:57:06.000000000 
+git add "./Modele_domowe/epidemic_KijakLukasz.alg"			# 2007-05-15 22:35:06.000000000 
+git add "./Modele_domowe/epidemic_Malina_Fidyk_popr.alg"			# 2007-05-15 09:14:20.000000000 
+git add "./Modele_domowe/Epidemic_SalskiAndrzejSWN5popr.alg"			# 2007-05-15 21:00:16.000000000 
+git add "./Modele_domowe/getto_MMelcer_grupa.alg"			# 2007-05-15 21:05:16.000000000 
+git add "./Modele_domowe/dyl_wieznia_Kitta.alg"			# 2007-05-17 00:27:40.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/filtr_Marta_Rojek-zad_10.alg"			# 2007-05-21 21:33:58.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/filtr_tekstowy_joanna_obszynska.alg"			# 2007-05-21 21:33:50.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/filtr_textowy_Karolina_Zolkowska.alg"			# 2007-05-21 21:34:34.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Ania_Gawrys_Spacja.alg"			# 2007-05-21 21:34:12.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/UsuwanieSpacji_Olga_Jezierska.alg"			# 2007-05-21 21:33:38.000000000 
+git add "./Modele_domowe/adam_fidusiewicz_siec_hierarchiczna.alg"			# 2007-05-21 22:25:42.000000000 
+git add "./Modele_domowe/epidemia_graf1D_Teska.alg"			# 2007-05-21 22:15:42.000000000 
+git add "./Modele_domowe/epidemic_MagdaFormanowiczIRafalKrolikowski.alg"			# 2007-05-21 22:30:44.000000000 
+git add "./Modele_domowe/epidemic_Malinka_Fidyk_popr2.alg"			# 2007-05-21 22:14:42.000000000 
+git add "./Modele_domowe/Epidemic_Pasikowska_Agata.alg"			# 2007-05-21 22:19:20.000000000 
+git add "./Modele_domowe/epidemic_Zalewska_Aneta_jednowymiarowaZ4po_czeniami.alg"			# 2007-05-21 22:35:34.000000000 
+git add "./Modele_domowe/epid_architektura_regularna_Szewczuk.alg"			# 2007-05-21 22:38:24.000000000 
+git add "./Modele_domowe/Jeden_wymiarAdam_Krolikowsk_NIEDZIAŁA.alg"			# 2007-05-21 22:30:48.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/plik_tekst_Bednarczyk_Anna.alg"			# 2007-05-22 16:24:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/Ania_Gawrys_Spacja_poprawiana.alg"			# 2007-05-22 16:29:48.000000000 
+git add "./Modele_domowe/Ekosystemy/drap_7_Przewlocka_Jaga.alg"			# 2007-05-28 13:00:20.000000000 
+git add "./Modele_domowe/Ekosystemy/drap_of_drzewa_Poltorak.alg"			# 2007-05-28 13:00:24.000000000 
+git commit -a -m "2007-05"
+
+
+git add "./Gry/Berek_Gawrys.alg"			# 2007-06-06 16:06:50.000000000 
+git add "./Modele_domowe/epidemic_Czaban_Hierar.alg"			# 2007-06-06 15:10:10.000000000 
+git add "./Modele_domowe/epidemic_LagowskiSWM.alg"			# 2007-06-06 15:05:06.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/FiltrTekstowyMlynarczyk.alg"			# 2007-06-13 23:27:02.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/filtr_Grodecka.alg"			# 2007-06-13 23:32:42.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/filtr_spacja_MaksymPolak.alg"			# 2007-06-13 23:26:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_Max_Polak.alg"			# 2007-06-13 23:01:36.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_trudne_Zapedowski.alg"			# 2007-06-13 22:53:12.000000000 
+git add "./Gry/berek_Jezierska.alg"			# 2007-06-13 23:42:12.000000000 
+git add "./Gry/berek_Marta_Rojek-zad12.alg"			# 2007-06-13 23:46:50.000000000 
+git add "./Gry/Berek_zmodyfikowany_przez_Przemyslawa_Zapedowskiego_.alg"			# 2007-06-13 23:52:56.000000000 
+git add "./Gry/gra_w_berka_joanna_obszynska.alg"			# 2007-06-13 23:45:40.000000000 
+git add "./Gry/Berek_Bednarczyk program.alg"			# 2007-06-14 00:04:50.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/naukaSlowek_CZYJ.alg"			# 2007-06-18 21:42:18.000000000 
+git add "./Gry/kolko i krzyzyk joanna obszynska"			# 2007-06-18 23:31:10.000000000 
+git add "./Modele_domowe/epidemic_Bartoszewska.alg"			# 2007-06-18 22:07:08.000000000 
+git add "./Gry/gra_w_wisielca_Wiesiek4.alg"			# 2007-06-19 11:54:54.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/BazaAdresowa_MartyRojek.alg"			# 2007-06-20 23:40:24.000000000 
+git add "./Modele_domowe/ipod_Symulacja_NIEDZIALA.alg"			# 2007-06-20 11:11:50.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/Wykresy1_ZapędowskiProgram.alg"			# 2007-06-22 10:44:14.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/filtr_Ziolkowski.alg"			# 2007-06-24 23:57:24.000000000 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/statystyki_Ziolkowski.alg"			# 2007-06-24 23:56:46.000000000 
+git add "./Gry/Berek_Zolkowski.alg"			# 2007-06-25 12:21:52.000000000 
+git add "./Modele_domowe/opinie_ciagle_zaliczeniowy_z_losowaniem.alg"			# 2007-06-25 13:38:54.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/Wykresy2_ZapedowskiProgram.alg"			# 2007-06-26 23:42:50.000000000 
+git add "./Modele_domowe/agresja_na_stadionie_Adamowie_symulacja.alg"			# 2007-06-26 11:45:00.000000000 
+git commit -a -m "2007-06"
+
+
+git add "./Dalsze_programowanie/Grafiki_domowe/kulki3.5_CZYJE.alg"			# 2007-07-04 12:48:14.000000000 
+git add "./Gry/kulki3.5_CZYJE.alg"			# 2007-07-04 12:48:14.000000000 
+git add "./Modele_domowe/dyfuzja_informacja_CZYJ.alg"			# 2007-07-04 00:06:30.000000000 
+git add "./Modele_domowe/Symulacja prostego ekosystemu_SPIKowcy.alg"			# 2007-07-05 20:51:14.000000000 
+git add "./Modele_domowe/trauma_model_program_Magda.alg"			# 2007-07-05 23:03:42.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_Zolkowska_test.alg"			# 2007-07-06 18:17:30.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/waz_Grodecka.alg"			# 2007-07-06 18:26:32.000000000 
+git add "./Dalsze_programowanie/Inne_domowe/Lora_Gawrys.alg"			# 2007-07-06 01:10:18.000000000 
+git add "./Modele_domowe/model-galeria_CZYJ.alg"			# 2007-07-06 00:46:40.000000000 
+git commit -a -m "2007-07"
+
+
+
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/fikolek_ZAD5.alg"			# 2008-04-22 20:52:00.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/sterowane_kolko_5.33_NIEDZIALA.alg"			# 2008-10-28 15:44:40.000000000 
+git add "./Dalsze_programowanie/Grafiki_domowe/sterowane_kolko5.5rekordy.alg"			# 2008-12-28 20:02:18.000000000 
+git commit -a -m "2008"
+
+
+git add "./ABC/HetkaPetelka.alg"			# 2010-10-06 18:56:32.000000000 
+git add "./ABC/HetkaPetelkaKwadrat.alg"			# 2010-10-06 19:29:22.000000000 
+git add "./ABC/HetkaPetelkaKwadratReal.alg"			# 2010-10-06 19:54:10.000000000 
+git commit -a -m "2010-10"
+
+git add "./ABC/szum generator v1.0.alg"			# 2010-11-09 22:14:56.000000000 
+git add "./Modele_domowe/bladzenie_Wyciek_v4.0_by_Jablonski.alg"			# 2010-11-09 22:47:16.000000000 
+git add "./Modele_domowe/Bladzenia_NataliaG.alg"			# 2010-11-20 18:03:32.000000000 
+git add "./Modele_domowe/logistyczne_Wojewoda_Z.alg"			# 2010-11-20 18:03:44.000000000 
+git add "./Modele_domowe/Pijany_marynarz_x100_AdrianElczewski.alg"			# 2010-11-20 18:37:16.000000000 
+git add "./Modele_domowe/automat_komorkowy_CZYJ.alg"			# 2010-11-24 11:22:20.000000000 
+git commit -a -m "2010-11"
+
+git add "./Modele_domowe/Termity/MrowkaLangtonaLukaszaJochemczyka.alg"			# 2010-12-20 23:25:34.000000000 
+git add "./Modele_domowe/Termity/termity_Magdy.alg"			# 2010-12-20 23:21:02.000000000 
+git commit -a -m "2010-12"
+
+git add "./Modele_domowe/Termity/ZuzaMrówki_v2.1.alg"			# 2011-01-16 16:43:48.000000000 
+git add "./Modele_domowe/Termity/termity_AdrianElczewski.alg"			# 2011-01-17 13:23:34.000000000 
+git add "./Modele_domowe/Termity/termity_Magdy_AgTarka.alg"			# 2011-01-17 12:26:52.000000000 
+git add "./Modele_domowe/automat_komorkowy_IrminyJanas.alg"			# 2011-01-19 22:28:38.000000000 
+git add "./Modele_domowe/Ejdys_6_Bladzenie.alg"			# 2011-01-19 22:24:00.000000000 
+git add "./Modele_domowe/Ejdys_automat_komorkowy.alg"			# 2011-01-19 22:28:54.000000000 
+git add "./Modele_domowe/Termity/termity_Magdy_AgTarka_KOPIA.alg"			# 2011-01-20 09:25:00.000000000 
+git add "./Modele_domowe/Termity/mrowki_Karina_Karendys.alg"			# 2011-01-23 15:22:42.000000000 
+git add "./Modele_domowe/Ejdys_Life.alg"			# 2011-01-24 23:00:18.000000000 
+git commit -a -m "2011-01"
+
+
+git add "./Modele_domowe/getto_Olgi_Gornickiej.alg"			# 2011-02-03 04:10:50.000000000 
+git add "./Modele_domowe/Automat1D_Wicha15524.alg"			# 2011-02-06 18:14:38.000000000 
+git add "./Modele_domowe/wplyw_automat06_Zbrzeski_.alg"			# 2011-02-06 04:13:48.000000000 
+git commit -a -m "2011-02"
+
+git add "./Dalsze_programowanie/Grafiki_domowe/grafika_wielkanoc_nowa.pas"			# 2020-11-25 21:32:32.237849700 
+git add "./Dalsze_programowanie/Inne_domowe/complex_numbers_Karoliny_Lisieckiej.pas"			# 2020-11-25 21:32:32.235849600 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/delta_WlodarczykKudra.pas"			    # 2020-11-25 21:32:32.236849700 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/sumy_dodatnie_ujemne_Kudra.pas"			# 2020-11-25 21:32:32.236849700 
+git add "./Dalsze_programowanie/Latwe_obliczenia_domowe/TabliczkaMnoz_Karbowski.pas"			# 2020-11-25 21:32:32.235849600 
+git commit -a -m "Oryginalne_daty_nie_zachowane"
