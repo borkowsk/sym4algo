@@ -75,7 +75,7 @@ void draw() {
   // Czyszczenie obszaru z tekstem
   fill(255);
   noStroke();
-  rect(0, 0, 150, 25);
+  rect(10, 5, 100, 14);
   
   // Rysowanie nowego tekstu
   textAlign(LEFT, TOP);
