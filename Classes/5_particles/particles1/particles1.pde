@@ -59,13 +59,13 @@ void draw() {
   // Czyszczenie obszaru z tekstem
   fill(255);
   noStroke();
-  rect(0, 0, 80, 25);
+  rect(10, 5, 80, 15);
   
   // Rysowanie nowego tekstu
   textAlign(LEFT, TOP);
   fill(0);
   textSize(14);
-  text(stepCount, 10, 5);
+  text("Step: " + stepCount, 10, 5);
   
   // Opóźnienie (analogicznie do delay(80) w oryginalnym kodzie)
   frameRate(12);
