@@ -1,5 +1,7 @@
 # sym4algo
-Materials for simulation course in ALGO (kind of simplified Pascal)
+Historical materials for simulation course in ALGO (kind of simplified Pascal). Some examples translated into Processing using Copilot.
+
+![Historical project](/data/wb/SCC/archivals/Sym4algo/doc/historical-bulding.gif  "Historical project")
 
 ## Financing
 
@@ -7,7 +9,7 @@ Last works on this repository was partially sponsored by
 __Centre For Systemic Risk Analisis__
 (https://cbrs.uw.edu.pl/en/home-page/)
 
-## PL: WYWIAD na temat symulacji społecznych na YouTube
+## PL only: WYWIAD na temat symulacji społecznych na YouTube
 
 * FB: https://www.facebook.com/podejdzNaukovo/videos/516387107100734/
 * YT: https://www.youtube.com/watch?v=jdm_O_aWtSI
