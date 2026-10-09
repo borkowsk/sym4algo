@@ -1,6 +1,6 @@
 ### Poprawione identyfikatory:
 
-* **Klasy i stałe:**
+**Klasy i stałe:**
 * `node` $\rightarrow$ `Node` (klasa reprezentująca węzeł)
 
 
@@ -24,7 +24,7 @@
 
 
 
-* **Zmienne i struktury:**
+**Zmienne i struktury:**
 * `TheNodes` $\rightarrow$ `nodes`
 
 * `TheEdges` $\rightarrow$ `edges`
@@ -37,7 +37,7 @@
 
 
 
-* **Procedury i funkcje:**
+**Procedury i funkcje:**
 * `CleanArrays` $\rightarrow$ `cleanArrays()`
 
 * `RandomPosition` $\rightarrow$ `randomPosition()`
