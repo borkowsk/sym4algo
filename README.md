@@ -1,7 +1,7 @@
 # sym4algo
 Historical materials for simulation course in ALGO (kind of simplified Pascal). Some examples translated into Processing using Copilot.
 
-![Historical project](/data/wb/SCC/archivals/Sym4algo/doc/historical-bulding.gif  "Historical project")
+![Historical project](./doc/historical-bulding.gif  "Historical project")
 
 ## Financing
 
